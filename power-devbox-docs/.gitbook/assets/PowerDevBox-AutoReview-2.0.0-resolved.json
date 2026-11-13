@@ -1,0 +1,1135 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Auto Code Review your flows. Use My flow action or workflows table to export your flows key information as json, or the following files: Review - Code Review of flow, with score, errors and warnings. Report - All variables, actions and connections. Diagram - Visual representation of the flow.",
+    "version": "2.0.0",
+    "title": "AutoReview",
+    "termsOfService": "https://powerdevbox.com/terms&conditions.html",
+    "contact": {
+      "name": "Power DevBox Support",
+      "url": "https://powerdevbox.com/contact.html",
+      "email": "info@powerdevbox.com"
+    }
+  },
+  "host": "api.powerdevbox.com",
+  "basePath": "/v2/autoreview",
+  "tags": [],
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "security": [
+    {
+      "api_key": []
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Info (V2)",
+        "description": "Latest information about AutoReview",
+        "operationId": "GET-info",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "default",
+            "schema": {
+              "$ref": "#/definitions/inline_response_200"
+            }
+          }
+        }
+      }
+    },
+    "/json": {
+      "post": {
+        "summary": "JSON",
+        "description": "Returns raw AutoReview data as a json",
+        "operationId": "POST-json",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/body"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "default",
+            "schema": {
+              "$ref": "#/definitions/inline_response_200_1"
+            }
+          }
+        }
+      }
+    },
+    "/file": {
+      "post": {
+        "summary": "Files (V2)",
+        "description": "Returns generated files",
+        "operationId": "POST-file-V2",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/body_1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "default",
+            "schema": {
+              "$ref": "#/definitions/inline_response_200_2"
+            }
+          }
+        }
+      }
+    },
+    "/diagram": {
+      "post": {
+        "summary": "Diagram (V2)",
+        "description": "Returns image of the flow",
+        "operationId": "POST-diagram",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/body_2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "default",
+            "schema": {
+              "$ref": "#/definitions/inline_response_200_3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "apiKey",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "inline_response_200_1_data_connectionArray": {
+      "type": "object",
+      "properties": {
+        "conName": {
+          "type": "string",
+          "description": "Connection name"
+        },
+        "appId": {
+          "type": "string",
+          "description": "Connection id url"
+        },
+        "opId": {
+          "type": "string",
+          "description": "Connection type"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Count of connection usage"
+        }
+      },
+      "description": "Connection item"
+    },
+    "Properties": {
+      "type": "object",
+      "required": [
+        "definition",
+        "displayName",
+        "environment",
+        "name",
+        "owner"
+      ],
+      "properties": {
+        "displayName": {
+          "type": "string",
+          "description": "Name of flow",
+          "title": "Display Name",
+          "x-ms-summary": "Display name",
+          "x-ms-visibility": "important"
+        },
+        "name": {
+          "type": "string",
+          "description": "Unique identifier (name/resourceid)",
+          "title": "Flow ID",
+          "x-ms-summary": "Flow Id",
+          "x-ms-visibility": "important"
+        },
+        "owner": {
+          "type": "string",
+          "description": "Flow owner",
+          "title": "Owner",
+          "x-ms-summary": "Owner",
+          "x-ms-visibility": "important"
+        },
+        "environment": {
+          "type": "string",
+          "description": "Flow environment",
+          "title": "Environment",
+          "x-ms-summary": "Environment",
+          "x-ms-visibility": "important"
+        },
+        "definition": {
+          "type": "object",
+          "description": "Flow definition",
+          "title": "Definition",
+          "properties": {},
+          "x-ms-summary": "Definition",
+          "x-ms-visibility": "important"
+        }
+      },
+      "description": "Properties JSON",
+      "x-ms-summary": "Flow properties"
+    },
+    "body": {
+      "type": "object",
+      "required": [
+        "configs",
+        "properties"
+      ],
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/Properties"
+        },
+        "configs": {
+          "$ref": "#/definitions/Configs"
+        }
+      }
+    },
+    "inline_response_200_3_data": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "string",
+          "description": "svg content"
+        },
+        "info": {
+          "type": "string",
+          "description": "Nomnoml.com/ code"
+        }
+      },
+      "description": "data"
+    },
+    "inline_response_200_1_data_variableArray": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Variable name"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of variable"
+        },
+        "value": {
+          "type": "string",
+          "description": "Initialised Value"
+        },
+        "used": {
+          "type": "boolean",
+          "description": "Is the variable used"
+        },
+        "named": {
+          "type": "boolean",
+          "description": "Var follow naming convention"
+        }
+      },
+      "description": "Variable item"
+    },
+    "Properties_1": {
+      "type": "object",
+      "required": [
+        "definition",
+        "displayName",
+        "environment",
+        "name",
+        "owner"
+      ],
+      "properties": {
+        "displayName": {
+          "type": "string",
+          "description": "Name of flow",
+          "title": "Display Name",
+          "x-ms-summary": "Display name",
+          "x-ms-visibility": "important"
+        },
+        "name": {
+          "type": "string",
+          "description": "Unique identifier (name/resourceid)",
+          "title": "Flow ID",
+          "x-ms-summary": "Flow Id",
+          "x-ms-visibility": "important"
+        },
+        "owner": {
+          "type": "string",
+          "description": "Flow owner",
+          "title": "Owner",
+          "x-ms-summary": "Owner",
+          "x-ms-visibility": "important"
+        },
+        "environment": {
+          "type": "string",
+          "description": "Flow Environment",
+          "title": "Environment",
+          "x-ms-summary": "Environment",
+          "x-ms-visibility": "important"
+        },
+        "definition": {
+          "type": "object",
+          "description": "Flow Definition",
+          "title": "Definition",
+          "properties": {},
+          "x-ms-summary": "Definition",
+          "x-ms-visibility": "important"
+        }
+      },
+      "description": "Properties JSON",
+      "x-ms-summary": "Properties"
+    },
+    "inline_response_200_1_data": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Flow display name"
+        },
+        "id": {
+          "type": "string",
+          "description": "Flow resorurce Id or workflowsid"
+        },
+        "environment": {
+          "type": "string",
+          "description": "Environment"
+        },
+        "owner": {
+          "type": "string",
+          "description": "Email of owner"
+        },
+        "trigger": {
+          "type": "string",
+          "description": "Trigger name"
+        },
+        "triggerParam": {
+          "type": "string",
+          "description": "Stringifed JSON of parameters"
+        },
+        "triggerData": {
+          "type": "string",
+          "description": "Stringifed JSON of key info"
+        },
+        "triggerConfig": {
+          "type": "string",
+          "description": "Stringifed JSON of settings"
+        },
+        "triggerExpress": {
+          "type": "string",
+          "description": "Any trigger conditions"
+        },
+        "triggerInputs": {
+          "type": "string",
+          "description": "Any trigger inputs"
+        },
+        "triggerRecur": {
+          "type": "string",
+          "description": "Trigger schedule (if applic)"
+        },
+        "premium": {
+          "type": "boolean",
+          "description": "Uses premium connectors"
+        },
+        "connectionRefs": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Count of Connection References"
+        },
+        "connectors": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Count of api actions"
+        },
+        "steps": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Count of all actions"
+        },
+        "variables": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Count of variables"
+        },
+        "complexity": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Complexity score"
+        },
+        "varNaming": {
+          "type": "boolean",
+          "description": "All Vars follow naming convention"
+        },
+        "varNameConsts": {
+          "type": "boolean",
+          "description": "All vars follow const convention"
+        },
+        "varNameUse": {
+          "type": "boolean",
+          "description": "All vars used"
+        },
+        "composes": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Count of composes"
+        },
+        "exception": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Count of exception actions"
+        },
+        "exceptionHandleScope": {
+          "type": "boolean",
+          "description": "Exception scope used"
+        },
+        "exceptionScope": {
+          "type": "boolean",
+          "description": "Exception scope named Exception"
+        },
+        "exceptionTerminate": {
+          "type": "boolean",
+          "description": "Terminate in exception block"
+        },
+        "exceptionLink": {
+          "type": "boolean",
+          "description": "Exception expression link used"
+        },
+        "mainScope": {
+          "type": "boolean",
+          "description": "Scope named Main"
+        },
+        "variableArray": {
+          "type": "array",
+          "description": "Array of variables",
+          "items": {
+            "$ref": "#/definitions/inline_response_200_1_data_variableArray"
+          }
+        },
+        "actionArray": {
+          "type": "array",
+          "description": "Actions in an array",
+          "items": {
+            "$ref": "#/definitions/inline_response_200_1_data_actionArray"
+          }
+        },
+        "apiActionArray": {
+          "type": "array",
+          "description": "API type actions",
+          "items": {
+            "$ref": "#/definitions/inline_response_200_1_data_apiActionArray"
+          }
+        },
+        "exceptionArray": {
+          "type": "array",
+          "description": "Array of runAfter failed",
+          "items": {
+            "$ref": "#/definitions/inline_response_200_1_data_exceptionArray"
+          }
+        },
+        "connectionArray": {
+          "type": "array",
+          "description": "Connection references",
+          "items": {
+            "$ref": "#/definitions/inline_response_200_1_data_connectionArray"
+          }
+        },
+        "error": {
+          "type": "string",
+          "description": "error"
+        },
+        "actionObjectArray": {
+          "type": "array",
+          "description": "All actions",
+          "items": {
+            "$ref": "#/definitions/inline_response_200_1_data_actionObjectArray"
+          }
+        }
+      },
+      "description": "data"
+    },
+    "inline_response_200_1_data_exceptionArray": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Exept Action display name"
+        },
+        "step": {
+          "type": "string",
+          "description": "Exept Action name"
+        },
+        "type": {
+          "type": "string",
+          "description": "Exept Action type"
+        },
+        "id": {
+          "type": "string",
+          "description": "Exept Action ID"
+        },
+        "hashId": {
+          "type": "string",
+          "description": "Exept As action id not unique"
+        },
+        "tier": {
+          "type": "string",
+          "description": "Exept Premium or Standard"
+        },
+        "connector": {
+          "type": "string",
+          "description": "Exept Connection group"
+        },
+        "imgURL": {
+          "type": "string",
+          "description": "Exept Icon url"
+        },
+        "runAfter": {
+          "type": "string",
+          "description": "Exept RunAfter action and method"
+        },
+        "exception": {
+          "type": "string",
+          "description": "Exept RunAfter include Failed"
+        },
+        "index": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Exept Order action processed"
+        },
+        "complexity": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Exept Complexity score"
+        },
+        "detail": {
+          "type": "string",
+          "description": "Exept Stringified json of inputs"
+        },
+        "filter": {
+          "type": "string",
+          "description": "Exept Get Items filter parameter"
+        },
+        "pagination": {
+          "type": "string",
+          "description": "Exept Get Items pagin threshold"
+        },
+        "secure": {
+          "type": "string",
+          "description": "Exept Secure properties"
+        },
+        "retry": {
+          "type": "string",
+          "description": "API Retry type"
+        },
+        "timeout": {
+          "type": "string",
+          "description": "Exept Timeout time"
+        },
+        "position": {
+          "type": "string",
+          "description": "Exept What the action runs after"
+        },
+        "positionInfo": {
+          "type": "string",
+          "description": "Exept Inside a container"
+        },
+        "environmentVariables": {
+          "type": "string",
+          "description": "Exept Environment vars in action"
+        },
+        "environmentB": {
+          "type": "boolean",
+          "description": "Exept Contains environment var"
+        },
+        "notes": {
+          "type": "string",
+          "description": "API Action notes"
+        },
+        "parent": {
+          "type": "string",
+          "description": "Exept Name of parent container"
+        },
+        "branch": {
+          "type": "string",
+          "description": "Exept branching name"
+        },
+        "positionIndex": {
+          "type": "string",
+          "description": "Exept Index of parent container"
+        },
+        "positionType": {
+          "type": "string",
+          "description": "Exept Parent Runs after type"
+        },
+        "nested": {
+          "type": "string",
+          "description": "Exept Levels of nesting"
+        }
+      },
+      "description": "Except item"
+    },
+    "body_1": {
+      "type": "object",
+      "required": [
+        "configs",
+        "properties"
+      ],
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/Properties"
+        },
+        "configs": {
+          "$ref": "#/definitions/Configs_1"
+        }
+      }
+    },
+    "body_2": {
+      "type": "object",
+      "required": [
+        "configs",
+        "properties"
+      ],
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/Properties_1"
+        },
+        "configs": {
+          "$ref": "#/definitions/Configs_2"
+        }
+      }
+    },
+    "Configs": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "naming": {
+          "type": "object",
+          "description": "Configure own naming convention",
+          "title": "Naming",
+          "properties": {},
+          "x-ms-visibility": "advanced",
+          "x-ms-summary": "Naming convention"
+        },
+        "complexity": {
+          "type": "array",
+          "description": "Configure own complexity scores",
+          "items": {
+            "type": "string",
+            "description": "Configure own complexity scores",
+            "title": "Complexity",
+            "x-ms-summary": "Actions complexity"
+          },
+          "x-ms-visibility": "advanced"
+        },
+        "ratings": {
+          "type": "object",
+          "description": "Set fail limit for sections",
+          "title": "ratings",
+          "properties": {},
+          "x-ms-visibility": "advanced",
+          "x-ms-summary": "Review ratings"
+        },
+        "scoring": {
+          "type": "array",
+          "description": "Configure own scoring",
+          "title": "Scoring",
+          "items": {
+            "type": "string",
+            "description": "Configure own section points",
+            "title": "Score",
+            "x-ms-summary": "Section score"
+          },
+          "x-ms-visibility": "advanced",
+          "x-ms-summary": "Scoring"
+        },
+        "type": {
+          "type": "string",
+          "description": "type of return",
+          "title": "Type",
+          "default": "json",
+          "x-ms-visibility": "internal",
+          "x-ms-summary": "Response type"
+        }
+      },
+      "description": "Configs JSON",
+      "x-ms-summary": "Configs"
+    },
+    "inline_response_200_1": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/inline_response_200_1_data"
+        }
+      }
+    },
+    "inline_response_200": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "version"
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "apiKey"
+        },
+        "message": {
+          "type": "string",
+          "description": "message"
+        },
+        "information": {
+          "type": "string",
+          "description": "information"
+        },
+        "diagram": {
+          "type": "string",
+          "description": "diagram"
+        }
+      }
+    },
+    "inline_response_200_2": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/inline_response_200_2_data"
+        }
+      }
+    },
+    "inline_response_200_3": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/inline_response_200_3_data"
+        }
+      }
+    },
+    "Configs_2": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Image type",
+          "title": "Type",
+          "default": "SVG",
+          "enum": [
+            "SVG",
+            "PNG"
+          ],
+          "x-ms-visibility": "internal",
+          "x-ms-summary": "Image type"
+        }
+      },
+      "description": "Configs JSON",
+      "x-ms-summary": "Config"
+    },
+    "Configs_1": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type of file to return",
+          "title": "Type",
+          "default": "review",
+          "enum": [
+            "review",
+            "report",
+            "diagram",
+            "exception"
+          ],
+          "x-ms-visibility": "important",
+          "x-ms-summary": "File type"
+        },
+        "naming": {
+          "type": "object",
+          "description": "Configure your naming convention",
+          "title": "Naming",
+          "properties": {},
+          "x-ms-visibility": "advanced",
+          "x-ms-summary": "Naming convention"
+        },
+        "complexity": {
+          "type": "array",
+          "description": "Configure own complexity scores",
+          "title": "Complexity",
+          "items": {
+            "type": "string",
+            "description": "Configure own complexity scores",
+            "title": "Complexity",
+            "x-ms-summary": "Action complexity"
+          },
+          "x-ms-visibility": "advanced",
+          "x-ms-summary": "Complexity"
+        },
+        "ratings": {
+          "type": "object",
+          "description": "Set fail limit for sections",
+          "title": "Ratings",
+          "properties": {},
+          "x-ms-visibility": "advanced",
+          "x-ms-summary": "Review ratings"
+        },
+        "scoring": {
+          "type": "array",
+          "description": "Configure own scoring",
+          "title": "Scoring",
+          "items": {
+            "type": "string",
+            "description": "Configure own section points",
+            "title": "Scoring",
+            "x-ms-summary": "Section score"
+          },
+          "x-ms-visibility": "advanced",
+          "x-ms-summary": "Scoring"
+        }
+      },
+      "description": "Configs JSON",
+      "x-ms-summary": "Config"
+    },
+    "inline_response_200_2_data": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "string",
+          "description": "file content"
+        },
+        "info": {
+          "type": "string",
+          "description": "additional information"
+        }
+      }
+    },
+    "inline_response_200_1_data_actionObjectArray": {
+      "type": "object",
+      "properties": {
+        "step": {
+          "type": "string",
+          "description": "Obj Action Name"
+        },
+        "connector": {
+          "type": "string",
+          "description": "connector"
+        },
+        "name": {
+          "type": "string",
+          "description": "Obj Action display name"
+        },
+        "id": {
+          "type": "string",
+          "description": "Obj Acition ID"
+        },
+        "hashId": {
+          "type": "string",
+          "description": "Obj As action id not unique"
+        },
+        "object": {
+          "type": "string",
+          "description": "Obj Stringified json action"
+        },
+        "type": {
+          "type": "string",
+          "description": "Obj Action type"
+        },
+        "index": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Obj Order action processed"
+        },
+        "parent": {
+          "type": "string",
+          "description": "Obj Name of parent container"
+        }
+      },
+      "description": "Obj item"
+    },
+    "inline_response_200_1_data_actionArray": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Action display name"
+        },
+        "step": {
+          "type": "string",
+          "description": "Action Name"
+        },
+        "type": {
+          "type": "string",
+          "description": "Action Type"
+        },
+        "id": {
+          "type": "string",
+          "description": "Action ID"
+        },
+        "hashId": {
+          "type": "string",
+          "description": "Unique reference for flow"
+        },
+        "tier": {
+          "type": "string",
+          "description": "Premium or Standard"
+        },
+        "connector": {
+          "type": "string",
+          "description": "Connection group"
+        },
+        "imgURL": {
+          "type": "string",
+          "description": "Icon url"
+        },
+        "runAfter": {
+          "type": "string",
+          "description": "Run after action and method"
+        },
+        "exception": {
+          "type": "string",
+          "description": "RunAfter include Failed"
+        },
+        "index": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Order action processed"
+        },
+        "complexity": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Complexity score"
+        },
+        "detail": {
+          "type": "string",
+          "description": "Stringified json of inputs"
+        },
+        "filter": {
+          "type": "string",
+          "description": "Get Items filter parameter"
+        },
+        "pagination": {
+          "type": "string",
+          "description": "Get Items pagination threshold"
+        },
+        "secure": {
+          "type": "string",
+          "description": "Secure properties"
+        },
+        "retry": {
+          "type": "string",
+          "description": "Retry type"
+        },
+        "timeout": {
+          "type": "string",
+          "description": "Timeout time"
+        },
+        "position": {
+          "type": "string",
+          "description": "What the action runs after"
+        },
+        "positionInfo": {
+          "type": "string",
+          "description": "Inside a container"
+        },
+        "environmentVariables": {
+          "type": "string",
+          "description": "Environment vars in action"
+        },
+        "environmentB": {
+          "type": "boolean",
+          "description": "Contains environment variable"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Action notes"
+        },
+        "parent": {
+          "type": "string",
+          "description": "Name of parent container"
+        },
+        "branch": {
+          "type": "string",
+          "description": "Branching name"
+        },
+        "positionIndex": {
+          "type": "string",
+          "description": "Index of parent container"
+        },
+        "positionType": {
+          "type": "string",
+          "description": "Parent Runs after type"
+        },
+        "nested": {
+          "type": "string",
+          "description": "Levels of nesting"
+        }
+      },
+      "description": "Action item"
+    },
+    "inline_response_200_1_data_apiActionArray": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "API Action display name"
+        },
+        "step": {
+          "type": "string",
+          "description": "API Action name"
+        },
+        "type": {
+          "type": "string",
+          "description": "API Action type"
+        },
+        "id": {
+          "type": "string",
+          "description": "API Action ID"
+        },
+        "hashId": {
+          "type": "string",
+          "description": "Unique action id"
+        },
+        "tier": {
+          "type": "string",
+          "description": "API Premium or Standard"
+        },
+        "connector": {
+          "type": "string",
+          "description": "API Connection group"
+        },
+        "imgURL": {
+          "type": "string",
+          "description": "API Icon url"
+        },
+        "runAfter": {
+          "type": "string",
+          "description": "API RunAfter action and method"
+        },
+        "exception": {
+          "type": "string",
+          "description": "API RunAfter include Failed"
+        },
+        "index": {
+          "type": "integer",
+          "format": "int32",
+          "description": "API Order action processed"
+        },
+        "complexity": {
+          "type": "integer",
+          "format": "int32",
+          "description": "API Complexity score"
+        },
+        "detail": {
+          "type": "string",
+          "description": "API Stringified json of inputs"
+        },
+        "filter": {
+          "type": "string",
+          "description": "API Get Items filter parameter"
+        },
+        "pagination": {
+          "type": "string",
+          "description": "API Get Items pagina threshold"
+        },
+        "secure": {
+          "type": "string",
+          "description": "API Secure properties"
+        },
+        "retry": {
+          "type": "string",
+          "description": "API Retry type"
+        },
+        "timeout": {
+          "type": "string",
+          "description": "API Timeout time"
+        },
+        "position": {
+          "type": "string",
+          "description": "API What the action runs after"
+        },
+        "positionInfo": {
+          "type": "string",
+          "description": "API Inside a container"
+        },
+        "environmentVariables": {
+          "type": "string",
+          "description": "API Environment vars in action"
+        },
+        "environmentB": {
+          "type": "boolean",
+          "description": "API Contains environment var"
+        },
+        "notes": {
+          "type": "string",
+          "description": "API Action notes"
+        },
+        "parent": {
+          "type": "string",
+          "description": "API Name of parent container"
+        },
+        "branch": {
+          "type": "string",
+          "description": "API branching name"
+        },
+        "positionIndex": {
+          "type": "string",
+          "description": "API Index of parent container"
+        },
+        "positionType": {
+          "type": "string",
+          "description": "API Parent Runs after type"
+        },
+        "nested": {
+          "type": "string",
+          "description": "API Levels of nesting"
+        }
+      },
+      "description": "API item"
+    }
+  },
+  "parameters": {},
+  "responses": {},
+  "externalDocs": {
+    "description": "docs.powerdevbox.com",
+    "url": "https://docs.powerdevbox.com/autoreview/api"
+  },
+  "x-ms-connector-metadata": [
+    {
+      "propertyName": "Website",
+      "propertyValue": "https://powerdevbox.com/"
+    },
+    {
+      "propertyName": "Privacy policy",
+      "propertyValue": "https://powerdevbox.com/privacy.html"
+    },
+    {
+      "propertyName": "Categories",
+      "propertyValue": "Productivity;IT Operations"
+    }
+  ]
+}
