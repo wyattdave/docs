@@ -27,3 +27,9 @@ site:
       path: pdac
       content:
         directory: ./pdac
+    - type: space
+      key: space-5
+      title: Power DevBox Review
+      path: power-devbox-review
+      content:
+        directory: ./power-devbox-review

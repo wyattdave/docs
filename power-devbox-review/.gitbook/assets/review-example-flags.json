@@ -1,0 +1,26 @@
+[
+  {
+    "section": "app",
+    "name": "Guide example - App description",
+    "live": true,
+    "code": "const oCfg = oData.AppConfig || {}; return { Name: 'App description', Pass: Boolean(String(oCfg.AppDescript || '').trim()), Level: 'Warning', Why: 'A description helps reviewers understand the app.', How: 'Add a useful description for ' + (oCfg.Name || 'this app') + '.', Type: 'app', Category: 'maintainability' };"
+  },
+  {
+    "section": "auto",
+    "name": "Guide example - Actions without notes",
+    "live": true,
+    "code": "const aErrors = []; for (const oFlow of oData.flows || []) { const oReview = oFlow.review || {}; for (const oAction of oReview.actionArray || []) { if (!String(oAction.notes || '').trim()) aErrors.push({ area: oReview.name || oFlow.displayName, component: oAction.name, type: 'Maintainability', level: 'Warning', reason: 'No action note was found in the exported definition.' }); } } return aErrors;"
+  },
+  {
+    "section": "copilot",
+    "name": "Guide example - Missing agent instructions",
+    "live": true,
+    "code": "return (oData.agents || []).filter(oAgent => !oAgent.isPlaceholder && !String(oAgent.instructions || '').trim()).map(oAgent => ({ area: oAgent.name, component: 'Instructions', type: 'Quality', level: 'Warning', reason: 'No agent instructions were found in the export.' }));"
+  },
+  {
+    "section": "solutions",
+    "name": "Guide example - Zero major version",
+    "live": true,
+    "code": "if (String(oData.version || '').split('.')[0] !== '0') return []; return [{ area: oData.displayName || oData.name || 'Solution', component: 'Version', type: 'ALM', level: 'Warning', reason: 'Major version is zero. Confirm this matches the release policy.' }];"
+  }
+]
