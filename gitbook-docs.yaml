@@ -21,3 +21,9 @@ site:
       path: autoreview-pro
       content:
         directory: ./autoreview-pro
+    - type: space
+      key: space-4
+      title: PDAC
+      path: pdac
+      content:
+        directory: ./pdac
