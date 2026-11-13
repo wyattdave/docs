@@ -94,6 +94,13 @@
 
 ## Dev Tools
 
+* [Dataverse ERD - Chromium Extension](dev-tools/dataverse-erd/README.md)
+  * [Getting started](dev-tools/dataverse-erd/getting-started.md)
+  * [Diagram and Mermaid](dev-tools/dataverse-erd/diagram.md)
+  * [Exports](dev-tools/dataverse-erd/exports.md)
+    * [Security role permissions](dev-tools/dataverse-erd/security-roles.md)
+  * [Permissions and data handling](dev-tools/dataverse-erd/permissions-and-data.md)
+  * [Troubleshooting](dev-tools/dataverse-erd/troubleshooting.md)
 * [Power DevBox Chromium Extensions](dev-tools/power-devbox-chromium-extensions/README.md)
   * [Exception](dev-tools/power-devbox-chromium-extensions/exception.md)
   * [Share](dev-tools/power-devbox-chromium-extensions/share/README.md)
