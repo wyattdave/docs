@@ -30,4 +30,8 @@ Open **Data Sources** for the app's data-source names, dataset references and av
 
 ## Interpreting counts safely
 
+{% hint style="info" %}
+Inspecting variables and data is free. Turning those checks into executable **custom flags** requires [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
+
 Variable use is inferred from exported source. Comments, text, indirect references and app-format differences can affect text-based checks. Treat a zero-use count as an investigation lead, then confirm in [Parameters or Code Block](build.md). For custom rules, use the exact case-sensitive [input fields](../flags/custom-flags/data-and-output.md), such as `Variables.Global`, not guessed lowercase equivalents.

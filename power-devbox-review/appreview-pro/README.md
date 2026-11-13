@@ -6,7 +6,7 @@ AppReview Pro reviews the apps found in the loaded solution. Its canvas-app view
 2. If more than one app is listed, select the app to review.
 3. Start at **Overview**, then use the Build, Variables, Data and Quality menu groups.
 
-![AppReview App Overview and its app-specific navigation](../.gitbook/assets/review-app-overview.png)
+![Wide desktop AppReview overview with its summary cards on one row](../.gitbook/assets/review-app-overview-desktop.png)
 
 ## Overview
 
@@ -15,6 +15,10 @@ The cards summarise screens, components, variables and connections. App Informat
 Use this view to confirm you are reviewing the right app and identify areas needing deeper inspection. A high component count is a prompt to investigate, not an automatic defect. A blank or `undefined` value means the field was not supplied or resolved in this export; do not treat it as a measured runtime value.
 
 ## Review sequence
+
+{% hint style="info" %}
+**Compare and custom flags require Power DevBox Pro.** Standard app review and report export are free. [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) to unlock the paid features.
+{% endhint %}
 
 * [Components, Parameters and Code Block](build.md): understand structure and formulas.
 * [Local, Global, Formulas, Collections and data](variables-and-data.md): review state and dependencies.

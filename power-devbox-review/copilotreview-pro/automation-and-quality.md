@@ -26,6 +26,10 @@ The reviewer does **not run these evaluations** or fetch their results. A test c
 
 ## Flags
 
+{% hint style="info" %}
+**Power DevBox Pro required for custom flags and their reports.** [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) and activate it in Settings. Standard automation and evaluation-definition inspection remains free.
+{% endhint %}
+
 **Flags**, or the header **Custom flag report**, opens custom findings for the selected agent. **All flags** opens the central cross-section report. Use **Manage flags** to edit the Copilot library, then rerun the checks.
 
 Broken references and publish diagnostics are also useful exported evidence on the agent overview/detail. They are not a substitute for a live publish/deployment check. Review [execution errors](../flags/flag-report.md#execution-errors) before relying on a low custom-finding count.

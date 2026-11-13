@@ -2,7 +2,7 @@
 
 CopilotReview Pro reviews agent configuration and components from the loaded solution. Select an agent in the left menu to see its own Overview and grouped navigation.
 
-![CopilotReview Agent Overview and its grouped navigation](../.gitbook/assets/review-agent-overview.png)
+![Wide desktop CopilotReview Agent Overview with all five summary cards on one row](../.gitbook/assets/review-agent-overview-desktop.png)
 
 ## Overview
 
@@ -26,3 +26,9 @@ Navigation is data-dependent. For example, **Skills** is shown for a GitHub harn
 Select the linked name in a table to inspect the component detail. Where available, topic/tool views provide diagrams, YAML or data tabs. These show exported definitions, not live conversations or tool executions.
 
 For shared solution components or raw package files, use **Solution** in the outer sidebar. For the internal actions of linked cloud flows, use **AutoReview Pro**.
+
+{% hint style="info" %}
+**Custom flags and solution-version comparison require Power DevBox Pro.** Standard agent/topic/skill inspection is free. [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) to unlock the paid features.
+{% endhint %}
+
+See [Compare topics between solutions](comparing-topics.md) for a topic-level diff walkthrough.

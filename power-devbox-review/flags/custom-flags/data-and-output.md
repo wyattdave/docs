@@ -1,5 +1,9 @@
 # Input data and output contract
 
+{% hint style="info" %}
+Reading this contract is free. Downloading input through the custom-flag manager, testing rules and running custom flags require [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3). Standard reviewer data exports remain free.
+{% endhint %}
+
 ## Download the authoritative input
 
 Load a solution, open **Custom flags**, select a section and choose **Download section JSON**. Each section download is an array of contexts shaped as `{ name, data }`. The rule receives **the context's `data`**, not that outer array. With All sections selected, the download groups context arrays by section key.

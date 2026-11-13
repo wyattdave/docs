@@ -4,7 +4,7 @@ Power DevBox Review brings **AppReview Pro**, **AutoReview Pro** and **CopilotRe
 
 [Open Power DevBox Review](https://review.powerdevbox.com/) · [Start your first review](getting-started.md) · [Download custom-flag authoring skills](flags/custom-flags/ai-skills.md)
 
-![Power DevBox Review Home with a synthetic solution containing two apps, three flows and two agents](.gitbook/assets/review-home.png)
+![Wide desktop Home view with two apps, three flows and two agents in a demonstration solution](.gitbook/assets/review-home-desktop.png)
 
 ## What you can review
 
@@ -21,12 +21,10 @@ Power DevBox Review brings **AppReview Pro**, **AutoReview Pro** and **CopilotRe
 
 ## Free review and Pro features
 
-Standard reviews, solution browsing and standard exports need **no account or license key**. **Custom flags**—including their execution and reports—and **comparison of two solution versions** require a validated **Power DevBox Pro** license. A reviewer name ending in “Pro” does not mean its standard review is locked.
+Standard reviews, solution browsing and standard exports need **no account or license key**. A reviewer name ending in “Pro” does not mean its standard review is locked.
 
-## About this guide
-
-This guide describes the combined workspace, version **0.2.0**, checked against the source on 13 November 2026. The older [AppReview Pro](../appreview-pro/README.md) and [AutoReview Pro](../autoreview-pro/README.md) spaces describe the standalone tools; their upload, license and custom-flag instructions can differ.
-
-Screenshots show the real local application with **synthetic test exports**. Custom-flag and comparison screenshots use the application's mocked test-license responses; they do not show a real customer activation. Empty fields and zero counts reflect the deliberately small example, not a requirement for your solution.
+{% hint style="info" %}
+**Power DevBox Pro required:** custom flags, their reports, and comparison of two solution versions require a validated license. [Buy Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3), then activate your key in [Settings](settings.md).
+{% endhint %}
 
 Start with [Getting started](getting-started.md), or go directly to the reviewer you need.

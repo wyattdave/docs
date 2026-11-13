@@ -2,6 +2,10 @@
 
 These examples illustrate the four input scopes. They are deliberately small policy checks, not a complete best-practice pack. Adjust thresholds and recommendations to your team.
 
+{% hint style="info" %}
+Reading/downloading the examples is free. Importing, testing and executing these **custom flags** in the app requires [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
+
 [Download the four-rule example JSON](../../.gitbook/assets/review-example-flags.json). Back up your library, import the pack and inspect each section before running it. Each rule name starts with **Guide example** so it is easy to find, disable or remove. The pack has been exercised against synthetic reviewer data; test it against your own exports too.
 
 ## Apps: missing description

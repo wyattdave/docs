@@ -8,6 +8,10 @@ Have a **managed or unmanaged Power Platform solution ZIP** containing the compo
 
 Use a current browser. A desktop-sized window is easiest for code, wide tables and diagrams. No account is required for the standard review. Have your Power DevBox Pro key available only if you plan to use custom flags or comparison.
 
+{% hint style="info" %}
+**License needed only for custom flags and comparison.** Standard reviews and solution browsing are free. [Buy Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) and activate it in [Settings](settings.md) to use the paid features.
+{% endhint %}
+
 ## Load your first solution
 
 1. [Open the application](https://review.powerdevbox.com/).
@@ -17,7 +21,7 @@ Use a current browser. A desktop-sized window is easiest for code, wide tables a
 5. Choose an app, flow or agent from **In this solution**, or open a reviewer from the sidebar.
 6. Open **Solution** to check shared metadata, dependencies and files.
 
-![Home after loading a synthetic solution ZIP](.gitbook/assets/review-home.png)
+![Wide desktop Home view after loading a demonstration solution ZIP](.gitbook/assets/review-home-desktop.png)
 
 **Expected result:** the same loaded solution is available to every reviewer. A reviewer can legitimately show no items if the export contains no components of that type.
 

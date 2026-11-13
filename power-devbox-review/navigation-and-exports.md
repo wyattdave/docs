@@ -10,6 +10,10 @@ Reviewers retain their own component lists and tabs. Switching reviewer does not
 
 ## Shared header actions
 
+{% hint style="info" %}
+**Power DevBox Pro required:** Compare, Custom flag report and Manage custom flags need a validated license. Standard reviewer HTML/copy/data exports remain free. [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
+
 Each reviewer header provides:
 
 | Action | Purpose |
@@ -18,7 +22,7 @@ Each reviewer header provides:
 | **Copy** | Copy the current view; the format depends on the reviewer and its preferences. AppReview labels this **Copy as Markdown**. |
 | **Compare with an older version** | Choose an older ZIP for this reviewer's comparison; requires Pro. |
 | **Custom flag report** | Open findings scoped to the current app, flow or agent. Flow Overview opens all flow findings. Requires Pro. |
-| **More actions → Manage custom flags** | Open the central library filtered to this reviewer. |
+| **More actions → Manage custom flags** | Open the central library filtered to this reviewer; requires Pro. |
 | **More actions → Download review data (JSON)** | Download the reviewer's input-data contexts for analysis or authoring rules. |
 | **More actions → Documentation** | Open that reviewer's documentation destination in a new tab. These destinations may still point to the standalone documentation. |
 

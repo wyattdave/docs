@@ -2,11 +2,15 @@
 
 Settings centralises the workspace license, release information, reviewer preferences, installation and local bug reports.
 
-![Settings with no real license activated, showing license controls, release information and installation guidance](.gitbook/assets/review-settings.png)
+![Wide desktop Settings view with license controls and no real license activated](.gitbook/assets/review-settings-desktop.png)
 
 ## Activate Power DevBox Pro
 
 Standard review is free. Only custom flags and version comparison require Pro.
+
+{% hint style="info" %}
+**Need custom flags or comparison?** [Buy Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3), then follow the activation steps below. No purchase is needed for standard review.
+{% endhint %}
 
 1. Open **Settings**.
 2. Enter your **License key** and a meaningful **Device name**.
@@ -21,7 +25,7 @@ The app validates the license through Lemon Squeezy's public License API, checki
 * **Remember key on this browser** stores credentials in this browser origin. Leave it unchecked on shared computers. Without remembering, activation can be used in the current session, but a reload may require entering the key again.
 * **Validate saved key** forces an online check of available credentials. Successful validation is held in memory for up to five minutes; later paid operations can revalidate.
 * **Deactivate device** requests online deactivation and removes the local saved key after success. It is not a subscription-cancellation action.
-* **Manage subscription** opens billing. **Buy Power DevBox Pro** opens the purchase destination. Read the current commercial terms there; this guide does not promise an activation allowance or subscription price.
+* **Manage subscription** opens billing. [**Buy Power DevBox Pro**](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) opens the purchase destination. Read the current commercial terms there; this guide does not promise an activation allowance or subscription price.
 
 Remembered keys are accessible to code with access to this site's browser storage. Use the hosted HTTPS app and do not share browser profiles casually.
 

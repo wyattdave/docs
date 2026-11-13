@@ -2,7 +2,11 @@
 
 Custom flags are small JavaScript checks that turn your team's review standards into repeatable findings. A central library serves Apps, Automate, Copilot and Solutions. Managing and executing these rules requires validated Power DevBox Pro access.
 
-![Custom-flag library with section and status filters, using a mocked test license](../../.gitbook/assets/review-custom-flags.png)
+{% hint style="warning" %}
+**Power DevBox Pro required:** creating, testing, managing, importing/exporting and running custom flags needs a validated license. [Buy Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) and activate it in [Settings](../../settings.md).
+{% endhint %}
+
+![Wide desktop custom-flag library with All sections and All statuses selected](../../.gitbook/assets/review-custom-flags-desktop.png)
 
 ## Find a rule
 

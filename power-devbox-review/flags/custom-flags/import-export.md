@@ -2,6 +2,10 @@
 
 Rule packs are JSON arrays of executable custom checks. They are not review-data exports or finding reports.
 
+{% hint style="warning" %}
+**Power DevBox Pro required to import/export the library and execute custom flags.** [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) and activate it in [Settings](../../settings.md).
+{% endhint %}
+
 ## Export and back up
 
 1. Open **Custom flags** with validated Pro access.

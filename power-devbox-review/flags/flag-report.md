@@ -2,7 +2,11 @@
 
 The central Flag report combines **custom-rule failures** across **Apps, Automate, Copilot and Solutions**. It requires a loaded solution and validated Power DevBox Pro access. The sidebar link becomes available after loading a solution.
 
-![Combined custom-flag report generated from synthetic data with a mocked test license](../.gitbook/assets/review-flag-report.png)
+{% hint style="warning" %}
+**Power DevBox Pro required to run custom flags and view/export their report.** [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) and activate it in [Settings](../settings.md).
+{% endhint %}
+
+![Wide desktop All sections custom-flag report with totals across all four reviewer data sections](../.gitbook/assets/review-flag-report-desktop.png)
 
 ## Run and review
 

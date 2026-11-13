@@ -18,6 +18,10 @@ The export may omit the value or use a format the parser does not fully resolve.
 
 ## Custom flags or comparison are locked
 
+{% hint style="info" %}
+**These features require Power DevBox Pro.** [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) if needed, then activate or validate it in Settings. Standard review remains free.
+{% endhint %}
+
 Standard review remains free. Open Settings and activate/validate the correct Power DevBox Pro key online. Check product, status, expiry and device activation. A remembered key, edited local storage or cached app assets is not a valid offline entitlement.
 
 ## A flag produces no results

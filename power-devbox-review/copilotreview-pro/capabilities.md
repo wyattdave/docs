@@ -8,6 +8,10 @@ Descriptions should tell the orchestrator when a tool is appropriate and what it
 
 ### MCP permissions
 
+{% hint style="info" %}
+Inspecting tool definitions is free. Executing the MCP **custom-flag rules** and viewing their findings requires [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
+
 For MCP tools, available review data includes whether all tools are allowed and any explicit allowed-tool list. The default Copilot custom rules warn when a connector allows **all tools** or explicitly allows **more than five** tools. These are review thresholds, not a proof that the connector is unsafe or a universal limit imposed by Microsoft.
 
 Use the actual business requirement and least-privilege policy to decide whether a finding should lead to a configuration change. Default custom-rule execution requires Pro.

@@ -1,5 +1,9 @@
 # Create and test a flag
 
+{% hint style="warning" %}
+**Power DevBox Pro required to create, test and save custom flags.** [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3), then activate it in [Settings](../../settings.md).
+{% endhint %}
+
 ## Before you write code
 
 Decide which **exported field** proves or suggests the problem. Download the relevant section JSON and inspect a representative sample. If the data is unavailable—such as runtime duration, a user's sharing permissions or DLP policy—the rule cannot reliably check it.
@@ -16,9 +20,17 @@ Use the narrowest suitable section. App properties belong in Apps; flow internal
 6. Inspect the output and any error banner. Adjust the rule and retest.
 7. Choose **Save flag**, then open Flag report and **Run all flags**.
 
-![Custom flag editor testing a Solutions rule against a synthetic solution](../../.gitbook/assets/review-flag-editor.png)
+![Wide desktop custom-flag editor testing a Solutions rule against a demonstration solution](../../.gitbook/assets/review-flag-editor-desktop.png)
 
 The screenshot uses a mocked test license. No real license data is included.
+
+### AppReview example
+
+Choose **AppReview Pro** in the Section field for an app-specific check. The example below checks `AppConfig.AppDescript` using AppReview's single pass/fail output contract. The input is one app at a time, rather than the shared Solutions object.
+
+![AppReview custom-flag creation with the AppReview Pro section selected and a tested description rule](../../.gitbook/assets/review-app-flag-create-desktop.png)
+
+See [Create an AppReview custom flag](../../appreview-pro/quality.md#create-an-appreview-custom-flag) for the entry point from the reviewer, and [Example rules](examples.md) for downloadable code.
 
 ## A first Solutions rule
 

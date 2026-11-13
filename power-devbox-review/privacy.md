@@ -14,6 +14,10 @@ The recent list is not a saved copy of the solution. Closing/refreshing means se
 
 ## Custom JavaScript
 
+{% hint style="info" %}
+Custom-flag execution requires [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3). A license does not make imported JavaScript trusted; review the code before running it.
+{% endhint %}
+
 Rules receive the selected section's review data. They execute in isolated, time-limited workers with network and browser-storage/DOM access blocked. Results are displayed as text. This limits access but cannot guarantee freedom from resource exhaustion or incorrect findings.
 
 Only import trusted code. Inspect generated rules too, even when they were created using the downloadable skills. See [Input data and output contract](flags/custom-flags/data-and-output.md#isolation-and-limits).

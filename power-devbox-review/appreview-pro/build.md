@@ -18,7 +18,7 @@ Use the header filter when available to narrow to a control name or property. Re
 
 **Code Block** presents extracted formulas as a readable source view. Search for a control, variable, function or reference, then read the surrounding formula before deciding whether it is a problem.
 
-![AppReview Code Block displaying synthetic app and button formulas](../.gitbook/assets/review-app-code.png)
+![Wide desktop AppReview Code Block displaying demonstration app and button formulas](../.gitbook/assets/review-app-code-desktop.png)
 
 In **Settings → Reviewer preferences**, AppReview's **Code Block only 'On' parameters** setting controls whether that view is restricted to event-style properties. Turn it off when your review also needs non-event formulas. The Parameters view and raw downloaded data help verify that a search did not miss content because of a display preference.
 

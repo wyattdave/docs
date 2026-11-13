@@ -2,7 +2,7 @@
 
 Open **AutoReview Pro**, then choose a flow from Flow Overview or the left menu. The detail view brings together the trigger, connections, variables, exception handling and action inventory.
 
-![Detailed AutoReview review of a synthetic manual flow](../.gitbook/assets/review-flow-detail.png)
+![Wide desktop AutoReview detail showing a service-request flow and its extracted actions](../.gitbook/assets/review-flow-detail-desktop.png)
 
 ## Trigger and summary
 
@@ -29,6 +29,10 @@ Use **Actions Overview** to locate an action and inspect its extracted details. 
 For a practical review, inspect external calls, loops and nested conditions first. Then check filtering/pagination, failure paths, sensitive inputs/outputs and environment-specific values. Source text can be encoded or expression-based; verify a suspicious value in its surrounding definition.
 
 ## Custom Flags and preferences
+
+{% hint style="info" %}
+**Power DevBox Pro required for custom flags and their findings.** [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3) and activate it in Settings. Reading flow definitions and standard diagrams is free.
+{% endhint %}
 
 The flow's **Custom Flags** action opens its scoped findings. It does not open the rule editor. Choose **Manage flags** to change definitions, then rerun the scan.
 

@@ -2,7 +2,7 @@
 
 AutoReview Pro reviews cloud flows in the loaded solution. It starts with **Flow Overview**, then lets you open individual flows for action-level analysis.
 
-![AutoReview Flow Overview with manual, automated and scheduled synthetic flows](../.gitbook/assets/review-flow-overview.png)
+![Wide desktop AutoReview Flow Overview with manual, automated and scheduled demonstration flows](../.gitbook/assets/review-flow-overview-desktop.png)
 
 ## Overview cards and flow list
 
@@ -18,6 +18,10 @@ For the complete shared component inventory, including unused declarations, open
 
 ## All flow flags
 
+{% hint style="info" %}
+**Custom flags and version comparison require Power DevBox Pro.** Standard flow review and single-version diagrams are free. [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
+
 **All flow flags** opens AutoReview's embedded custom report across every flow. A number is shown after a completed scan; a dash is not a finding count. An individual flow's Custom Flags action narrows to that flow. Custom flags require Pro.
 
-Continue with [Flow review and actions](flow-review.md), [Flow diagrams](diagrams.md), or [Compare solution versions](../comparing-versions.md).
+Continue with [Flow review and actions](flow-review.md), [Flow diagrams](diagrams.md), [Compare two flow diagrams](comparing-diagrams.md), or [Compare solution versions](../comparing-versions.md).

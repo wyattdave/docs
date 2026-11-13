@@ -12,6 +12,10 @@ An instruction being present does not prove that it is effective or that the mod
 
 Review trigger phrases/conditions, input/output expectations, node structure, redirects, variable use and calls to tools/flows. Investigate broken references and parse errors before interpreting incomplete counts as a complete review.
 
+![Wide desktop CopilotReview Topics view listing three populated demonstration topics](../.gitbook/assets/review-agent-topics-desktop.png)
+
+The example lists **Request status**, **Create a request** and **Escalate a request**, with their trigger phrases, node counts and descriptions. Select a topic name to open its definition/detail views rather than relying only on the overview counts.
+
 **Show System Topics** in reviewer preferences controls inclusion of default/system content in the displayed topic list. A team's maker-content rule should explicitly decide whether system/default topics belong in its scope instead of assuming every topic was authored by that team.
 
 ## Skills
@@ -19,6 +23,10 @@ Review trigger phrases/conditions, input/output expectations, node structure, re
 When the agent has exported skill content or uses the relevant harness, **Skills** exposes the available skill packages and files. Open a skill to inspect the packaged instructions and available file/data views.
 
 Check for a meaningful `SKILL.md`, supporting files that are actually needed and unwanted generated/cache files. A skill package in an agent export is not the same thing as the **downloadable AI authoring skills for writing review flags**. Those are provided separately on [Download AI authoring skills](../flags/custom-flags/ai-skills.md).
+
+{% hint style="info" %}
+Topic/skill inspection and downloading authoring skills are free. Running **custom flags** or [comparing topics between two solution versions](comparing-topics.md) requires [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
 
 ## Source-level review limits
 

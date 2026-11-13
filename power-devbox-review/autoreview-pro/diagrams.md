@@ -9,15 +9,23 @@ Flow diagrams turn an exported flow definition into a structural view of its tri
 3. Follow the trigger through actions, conditions and containers.
 4. Return to the review/action detail to check the exact configuration behind a node.
 
+![AutoReview diagram of a demonstration service-request flow showing its trigger, condition and actions](../.gitbook/assets/review-flow-diagram-desktop.png)
+
 Use the diagram to spot deep nesting, repeated structures and surprising branch placement. Review exception paths alongside run-after settings: the visual arrangement alone is not a guarantee that a path runs under the intended conditions.
 
 ## Flag highlighting
+
+{% hint style="info" %}
+**A single-version diagram is free.** Running custom flags for highlighting and comparing two solution versions require [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
 
 With Pro custom findings available, **Settings → Reviewer preferences → AutoReview Pro → Highlight Flagged Actions on Diagram** controls highlighting. A finding must map to the relevant flow/action for that action to be highlighted. A solution-level warning or a finding whose component name does not match an action may still appear in the report without highlighting a node.
 
 ## Comparison diagrams
 
 After [comparing with an older version](../comparing-versions.md), AutoReview provides its changed-flow comparison views and diagrams. Inspect the associated action details before approving a change. Formatting or a definition difference does not by itself measure impact on execution time or API usage.
+
+Open [Compare two flow diagrams](comparing-diagrams.md) for the side-by-side workflow and an explanation of the change colours.
 
 ## Limits
 

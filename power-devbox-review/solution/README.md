@@ -2,7 +2,7 @@
 
 The workspace's **Solution** section owns shared metadata, component inventories, package files and solution-level custom findings. You do not need a license to browse the standard information.
 
-![Solution overview cards and shared component counts for a synthetic package](../.gitbook/assets/review-solution.png)
+![Wide desktop Solution section with six summary cards and shared component counts](../.gitbook/assets/review-solution-desktop.png)
 
 ## Solution tab
 
@@ -21,6 +21,10 @@ Check unique name, display name, version, publisher and managed status before re
 | **Custom flags** | Embedded solution-level findings; Pro required. |
 
 ## Header actions
+
+{% hint style="info" %}
+**Compare versions and solution custom flags require Power DevBox Pro.** Browsing metadata/files and downloading solution JSON are free. [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3).
+{% endhint %}
 
 * **Compare versions** starts comparison across the reviewers against an older ZIP of the same solution.
 * **Download JSON** exports shared solution data. It includes inventories and enriched flow review metadata used by solution rules; it is not a byte-for-byte copy of the ZIP.

@@ -18,11 +18,13 @@
 * [Flow overview](autoreview-pro/README.md)
 * [Flow review and actions](autoreview-pro/flow-review.md)
 * [Flow diagrams](autoreview-pro/diagrams.md)
+* [Compare two flow diagrams](autoreview-pro/comparing-diagrams.md)
 
 ## CopilotReview Pro
 
 * [Agent overview](copilotreview-pro/README.md)
 * [Instructions, topics and skills](copilotreview-pro/build.md)
+* [Compare topics between solutions](copilotreview-pro/comparing-topics.md)
 * [Tools, knowledge and variables](copilotreview-pro/capabilities.md)
 * [Automation, evaluations and flags](copilotreview-pro/automation-and-quality.md)
 

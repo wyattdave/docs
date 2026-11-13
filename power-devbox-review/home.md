@@ -2,7 +2,7 @@
 
 Home is the starting point for loading a solution and moving between the reviewers.
 
-![Home reviewer cards and the loaded solution inventory](.gitbook/assets/review-home.png)
+![Wide desktop Home view showing reviewer cards and the loaded solution inventory](.gitbook/assets/review-home-desktop.png)
 
 ## Reviewer cards
 

@@ -2,6 +2,10 @@
 
 These downloadable skills help an AI coding assistant write custom review flags using documented schemas, output conventions and a feasibility check. They are **authoring instructions**, not importable rule packs and not an automatic review service.
 
+{% hint style="info" %}
+**Skill downloads are free.** Creating, testing, importing or running custom flags inside Power DevBox Review requires [Power DevBox Pro](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3), activated in [Settings](../../settings.md).
+{% endhint %}
+
 ## Downloads
 
 | Skill | Intended checks | Download |

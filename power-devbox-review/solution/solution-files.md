@@ -2,7 +2,7 @@
 
 Use **Solution → Solution files** to inspect the files actually included in the loaded ZIP, without extracting the package manually.
 
-![Solution file tree with a synthetic solution.xml preview](../.gitbook/assets/review-solution-files.png)
+![Wide desktop Solution files view with the demonstration solution.xml preview](../.gitbook/assets/review-solution-files-desktop.png)
 
 ## Browse and search
 

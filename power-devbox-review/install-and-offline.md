@@ -19,6 +19,10 @@ Offline availability depends on what has been cached and on browser storage rete
 
 ## Pro still needs the network
 
+{% hint style="info" %}
+**Custom flags and comparison need a validated Power DevBox Pro license.** [Buy a license](https://power-devbox.lemonsqueezy.com/checkout/buy/729d48f6-cc59-477e-a601-ca99100ffeb3). Installation does not unlock these features or remove online validation.
+{% endhint %}
+
 License validation requires an internet connection. Do not rely on custom flags or comparison remaining available throughout an offline session: there is no supported offline-unlock mechanism, and saved credentials alone do not grant access.
 
 ## Updates
