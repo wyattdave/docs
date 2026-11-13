@@ -1,0 +1,23 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Power DevBox Docs
+  structure:
+    - type: space
+      key: space-1
+      title: Power DevBox Docs
+      path: power-devbox-docs
+      default: true
+      content:
+        directory: ./power-devbox-docs
+    - type: space
+      key: space-2
+      title: AppReview Pro
+      path: appreview-pro
+      content:
+        directory: ./appreview-pro
+    - type: space
+      key: space-3
+      title: AutoReview Pro
+      path: autoreview-pro
+      content:
+        directory: ./autoreview-pro
