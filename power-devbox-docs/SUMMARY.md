@@ -92,22 +92,28 @@
 * [Account](flow-utilizer/account/README.md)
   * [Account Download](flow-utilizer/account/account-download.md)
 
-## Dev Tools
+## Dataverse ERD
 
-* [Dataverse ERD - Chromium Extension](dev-tools/dataverse-erd/README.md)
-  * [Getting started](dev-tools/dataverse-erd/getting-started.md)
-  * [Diagram and Mermaid](dev-tools/dataverse-erd/diagram.md)
-  * [Exports](dev-tools/dataverse-erd/exports.md)
-    * [Security role permissions](dev-tools/dataverse-erd/security-roles.md)
-  * [Permissions and data handling](dev-tools/dataverse-erd/permissions-and-data.md)
-  * [Troubleshooting](dev-tools/dataverse-erd/troubleshooting.md)
-* [Power DevBox Chromium Extensions](dev-tools/power-devbox-chromium-extensions/README.md)
-  * [Exception](dev-tools/power-devbox-chromium-extensions/exception.md)
-  * [Share](dev-tools/power-devbox-chromium-extensions/share/README.md)
-    * [Share Demo Videos](dev-tools/power-devbox-chromium-extensions/share/share-demo-videos.md)
-  * [Shortcut](dev-tools/power-devbox-chromium-extensions/shortcut.md)
-  * [Utility](dev-tools/power-devbox-chromium-extensions/utility/README.md)
-    * [Classic UI Clipboard](dev-tools/power-devbox-chromium-extensions/utility/classic-ui-clipboard.md)
-    * [New UI Clipboard](dev-tools/power-devbox-chromium-extensions/utility/new-ui-clipboard.md)
-    * [Utility Demo Videos](dev-tools/power-devbox-chromium-extensions/utility/utility-demo-videos.md)
-* [Power Automate Utility VS Code](dev-tools/power-automate-utility-vs-code.md)
+* [Dataverse ERD - Chromium Extension](dataverse-erd/README.md)
+  * [Getting started](dataverse-erd/getting-started.md)
+  * [Diagram and Mermaid](dataverse-erd/diagram.md)
+  * [Exports](dataverse-erd/exports.md)
+    * [Security role permissions](dataverse-erd/security-roles.md)
+  * [Permissions and data handling](dataverse-erd/permissions-and-data.md)
+  * [Troubleshooting](dataverse-erd/troubleshooting.md)
+
+## Power DevBox Extensions
+
+* [Power DevBox Chromium Extensions](power-devbox-chromium-extensions/README.md)
+  * [Exception](power-devbox-chromium-extensions/exception.md)
+  * [Share](power-devbox-chromium-extensions/share/README.md)
+    * [Share Demo Videos](power-devbox-chromium-extensions/share/share-demo-videos.md)
+  * [Shortcut](power-devbox-chromium-extensions/shortcut.md)
+  * [Utility](power-devbox-chromium-extensions/utility/README.md)
+    * [Classic UI Clipboard](power-devbox-chromium-extensions/utility/classic-ui-clipboard.md)
+    * [New UI Clipboard](power-devbox-chromium-extensions/utility/new-ui-clipboard.md)
+    * [Utility Demo Videos](power-devbox-chromium-extensions/utility/utility-demo-videos.md)
+
+## Power Automate Utility VS Code
+
+* [Power Automate Utility VS Code](power-automate-utility-vs-code.md)

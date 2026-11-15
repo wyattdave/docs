@@ -4,7 +4,7 @@ Power DevBox Dataverse ERD is a Chrome and Microsoft Edge extension that turns a
 
 [Install for Chrome](https://chromewebstore.google.com/detail/power-devbox-dataverse-er/mffdldfcdccomfdofoohglofiemgbpkh) · [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/power-devbox-dataverse-er/jgfjhddjjidpnmmpbnahdjmelfooendd) · [Source code](https://github.com/wyattdave/Power-DevBox-Datverse-ERD)
 
-![Dataverse ERD viewer showing the Pipeline Deployment Register solution, its tables, custom lookup connectors and orange dependency highlighting](../../.gitbook/assets/dataverse-erd-diagram-overview.png)
+![Dataverse ERD viewer showing the Pipeline Deployment Register solution, its tables, custom lookup connectors and orange dependency highlighting](../.gitbook/assets/dataverse-erd-diagram-overview.png)
 
 *Diagram screenshot from the extension's Chrome Web Store listing. The example contains six solution tables, seven relationships and one external dependency; your results depend on your solution.*
 

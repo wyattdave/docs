@@ -24,7 +24,7 @@ layout:
 
 # Exception
 
-<figure><img src="../../.gitbook/assets/exception v3 512.png" alt="" width="256"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/exception v3 512.png" alt="" width="256"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Docs updated to match version 1.1.0, if running on older version the Advance mode will not be visible and UI will be different.
@@ -50,11 +50,11 @@ A container is an action that contains other actions:
 
 To create the exception expression click on the Power DevBox Exception
 
-<figure><img src="../../.gitbook/assets/chrome_qzc67v38CB.gif" alt=""><figcaption><p>A egg timer will show while generating the expression</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/chrome_qzc67v38CB.gif" alt=""><figcaption><p>A egg timer will show while generating the expression</p></figcaption></figure>
 
 A popup will show when complete, listing all the containers included in the exception message.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 The exception expression is then added to your computers clipboard ready to be pasted (Ctrl + V) where required.
 
@@ -92,7 +92,7 @@ As an example, from the above image the below expression is created.
 
 Once pasted in an action is should appear as below.
 
-<figure><img src="../../.gitbook/assets/image (142).png" alt="" width="514"><figcaption><p>pasted in a Outlook exception email</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (142).png" alt="" width="514"><figcaption><p>pasted in a Outlook exception email</p></figcaption></figure>
 
 #### Additional Information
 
@@ -113,7 +113,7 @@ outputs('action_name')
 
 New Mode will automatically add all API actions (actions not built in) to the expression
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -175,7 +175,7 @@ As an example, from the above image the below expression is created.
 
 To Activate Advanced Mode press Ctrl+m
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 #### Additional Information
 
@@ -193,5 +193,5 @@ Press ctrl + e adds the following expression to your clipboard ready to paste.
 
 When added to a flow it returns a link to the run, idea for a exception notification, allowing quick link to the run.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 

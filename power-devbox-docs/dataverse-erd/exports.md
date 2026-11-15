@@ -20,7 +20,7 @@ The role button is conditional; see [Security role permissions](security-roles.m
 3. Open the downloaded workbook and select the **Table Design** worksheet.
 4. Use the header filters to focus on a table, data type or column classification. The header row is frozen.
 
-![Exported Table Design worksheet in Excel showing the six metadata columns, header filters, lookup targets and global choice names](../../.gitbook/assets/dataverse-erd-table-design-excel.png)
+![Exported Table Design worksheet in Excel showing the six metadata columns, header filters, lookup targets and global choice names](../.gitbook/assets/dataverse-erd-table-design-excel.png)
 
 *Genuine Excel export screenshot from the extension's Chrome Web Store listing. This contains schema documentation, not business-record values.*
 

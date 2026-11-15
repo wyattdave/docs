@@ -2,7 +2,7 @@
 
 Use the ERD to trace custom lookup relationships around the tables included in your selected solution.
 
-![Diagram with table logical names, column types, lookup labels and orange highlighting for external dependencies](../../.gitbook/assets/dataverse-erd-diagram-overview.png)
+![Diagram with table logical names, column types, lookup labels and orange highlighting for external dependencies](../.gitbook/assets/dataverse-erd-diagram-overview.png)
 
 *Published store example. The toolbar continues beyond the right edge of this screenshot; the current viewer also provides image export controls.*
 

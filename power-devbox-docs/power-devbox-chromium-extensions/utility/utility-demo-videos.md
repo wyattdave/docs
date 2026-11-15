@@ -23,8 +23,8 @@ layout:
 
 # Utility Demo Videos
 
-<figure><img src="../../../.gitbook/assets/chrome_oB8XbaeQOA.gif" alt=""><figcaption><p>Add to Flow New UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/chrome_oB8XbaeQOA.gif" alt=""><figcaption><p>Add to Flow New UI</p></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Add to Flow Classic UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Add to Flow Classic UI</p></figcaption></figure>
