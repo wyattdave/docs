@@ -51,6 +51,6 @@ If using Edge it is recommend to use the Edge store, any other browser we recomm
 
 ***
 
-{% content-ref url="../autoreview/autoreview-chromium-extension.md" %}
-[autoreview-chromium-extension.md](../autoreview/autoreview-chromium-extension.md)
+{% content-ref url="../../autoreview/autoreview-chromium-extension.md" %}
+[autoreview-chromium-extension.md](../../autoreview/autoreview-chromium-extension.md)
 {% endcontent-ref %}

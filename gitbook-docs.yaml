@@ -33,3 +33,45 @@ site:
       path: power-devbox-review
       content:
         directory: ./power-devbox-review
+    - type: space
+      key: space-6
+      title: AutoReview
+      path: autoreview
+      content:
+        directory: ./autoreview
+    - type: space
+      key: space-7
+      title: AppReview
+      path: appreview
+      content:
+        directory: ./appreview
+    - type: space
+      key: space-8
+      title: Flow Utilizer
+      path: flow-utilizer
+      content:
+        directory: ./flow-utilizer
+    - type: space
+      key: space-9
+      title: Solution Explorer
+      path: solution-explorer
+      content:
+        directory: ./solution-explorer
+    - type: space
+      key: space-10
+      title: Unmanaged
+      path: unmanaged
+      content:
+        directory: ./unmanaged
+    - type: space
+      key: space-11
+      title: Power DevBox Utility
+      path: power-devbox-utility
+      content:
+        directory: ./power-devbox-utility
+    - type: space
+      key: space-12
+      title: Dev Tools
+      path: dev-tools
+      content:
+        directory: ./dev-tools

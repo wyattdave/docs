@@ -45,7 +45,7 @@ The api key will be emailed to you within 48 hours
 
 **Next Step - Connector**
 
-{% content-ref url="../autoreview/autoreview-power-platform-connector/" %}
-[autoreview-power-platform-connector](../autoreview/autoreview-power-platform-connector/)
+{% content-ref url="../../autoreview/autoreview-power-platform-connector/README.md" %}
+[autoreview-power-platform-connector](../../autoreview/autoreview-power-platform-connector/README.md)
 {% endcontent-ref %}
 
