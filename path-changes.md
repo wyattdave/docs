@@ -9,35 +9,39 @@ Restructure: the `Dev Tools` section of the **Power DevBox** space (`power-devbo
 
 ## GitBook site — docs.powerdevbox.com
 
+Synced and verified live after the restructure. Each `##` section heading creates its own URL level (section index pages `/dataverse-erd.md`, `/power-devbox-extensions.md`, and `/power-automate-utility-vs-code.md` are new auto-generated group pages with no old equivalent).
+
 | Old path | New path |
 | --- | --- |
-| `/dev-tools/dataverse-erd.md` | `/dataverse-erd.md` |
-| `/dev-tools/dataverse-erd/getting-started.md` | `/dataverse-erd/getting-started.md` |
-| `/dev-tools/dataverse-erd/diagram.md` | `/dataverse-erd/diagram.md` |
-| `/dev-tools/dataverse-erd/exports.md` | `/dataverse-erd/exports.md` |
-| `/dev-tools/dataverse-erd/exports/security-roles.md` | `/dataverse-erd/exports/security-roles.md` |
-| `/dev-tools/dataverse-erd/permissions-and-data.md` | `/dataverse-erd/permissions-and-data.md` |
-| `/dev-tools/dataverse-erd/troubleshooting.md` | `/dataverse-erd/troubleshooting.md` |
-| `/dev-tools/power-devbox-chromium-extensions.md` | `/power-devbox-chromium-extensions.md` |
-| `/dev-tools/power-devbox-chromium-extensions/exception.md` | `/power-devbox-chromium-extensions/exception.md` |
-| `/dev-tools/power-devbox-chromium-extensions/share.md` | `/power-devbox-chromium-extensions/share.md` |
-| `/dev-tools/power-devbox-chromium-extensions/share/share-demo-videos.md` | `/power-devbox-chromium-extensions/share/share-demo-videos.md` |
-| `/dev-tools/power-devbox-chromium-extensions/shortcut.md` | `/power-devbox-chromium-extensions/shortcut.md` |
-| `/dev-tools/power-devbox-chromium-extensions/utility.md` | `/power-devbox-chromium-extensions/utility.md` |
-| `/dev-tools/power-devbox-chromium-extensions/utility/classic-ui-clipboard.md` | `/power-devbox-chromium-extensions/utility/classic-ui-clipboard.md` |
-| `/dev-tools/power-devbox-chromium-extensions/utility/new-ui-clipboard.md` | `/power-devbox-chromium-extensions/utility/new-ui-clipboard.md` |
-| `/dev-tools/power-devbox-chromium-extensions/utility/utility-demo-videos.md` | `/power-devbox-chromium-extensions/utility/utility-demo-videos.md` |
-| `/dev-tools/power-automate-utility-vs-code.md` | `/power-automate-utility-vs-code.md` |
+| `/dev-tools/dataverse-erd.md` | `/dataverse-erd/dataverse-erd.md` |
+| `/dev-tools/dataverse-erd/getting-started.md` | `/dataverse-erd/dataverse-erd/getting-started.md` |
+| `/dev-tools/dataverse-erd/diagram.md` | `/dataverse-erd/dataverse-erd/diagram.md` |
+| `/dev-tools/dataverse-erd/exports.md` | `/dataverse-erd/dataverse-erd/exports.md` |
+| `/dev-tools/dataverse-erd/exports/security-roles.md` | `/dataverse-erd/dataverse-erd/exports/security-roles.md` |
+| `/dev-tools/dataverse-erd/permissions-and-data.md` | `/dataverse-erd/dataverse-erd/permissions-and-data.md` |
+| `/dev-tools/dataverse-erd/troubleshooting.md` | `/dataverse-erd/dataverse-erd/troubleshooting.md` |
+| `/dev-tools/power-devbox-chromium-extensions.md` | `/power-devbox-extensions/power-devbox-chromium-extensions.md` |
+| `/dev-tools/power-devbox-chromium-extensions/exception.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/exception.md` |
+| `/dev-tools/power-devbox-chromium-extensions/share.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/share.md` |
+| `/dev-tools/power-devbox-chromium-extensions/share/share-demo-videos.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/share/share-demo-videos.md` |
+| `/dev-tools/power-devbox-chromium-extensions/shortcut.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/shortcut.md` |
+| `/dev-tools/power-devbox-chromium-extensions/utility.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/utility.md` |
+| `/dev-tools/power-devbox-chromium-extensions/utility/classic-ui-clipboard.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/utility/classic-ui-clipboard.md` |
+| `/dev-tools/power-devbox-chromium-extensions/utility/new-ui-clipboard.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/utility/new-ui-clipboard.md` |
+| `/dev-tools/power-devbox-chromium-extensions/utility/utility-demo-videos.md` | `/power-devbox-extensions/power-devbox-chromium-extensions/utility/utility-demo-videos.md` |
+| `/dev-tools/power-automate-utility-vs-code.md` | `/power-automate-utility-vs-code/power-automate-utility-vs-code.md` |
 
 ### Bulk rule (GitBook)
 
-Every removed URL follows the same pattern — strip the `dev-tools/` segment:
+The section slug depends on the tool:
 
 ```
-/dev-tools/<tool-path>  →  /<tool-path>
+/dev-tools/dataverse-erd/<rest>                    →  /dataverse-erd/dataverse-erd/<rest>
+/dev-tools/power-devbox-chromium-extensions/<rest> →  /power-devbox-extensions/power-devbox-chromium-extensions/<rest>
+/dev-tools/power-automate-utility-vs-code.md       →  /power-automate-utility-vs-code/power-automate-utility-vs-code.md
 ```
 
-where `<tool-path>` starts with one of: `dataverse-erd/`, `power-devbox-chromium-extensions/`, `power-automate-utility-vs-code`. This applies to both the `.md` and clean-URL forms.
+(`<rest>` includes the leading `/` where present; `.md` and clean-URL forms both follow the rule.)
 
 ## Platform (Workers) — devbox-docs.powerdevbox.workers.dev
 
@@ -74,4 +78,4 @@ Note: on the Workers platform, `security-roles` sits beside `exports` (route ref
 - Sidebar structure changed: `## Dev Tools` in `power-devbox-docs/SUMMARY.md` was replaced with three top-level sections — `## Dataverse ERD`, `## Power DevBox Extensions`, `## Power Automate Utility VS Code`.
 - Inbound links updated in this repo: `power-devbox-docs/SUMMARY.md` and `power-devbox-docs/README.md` (landing-page card links).
 - Relative asset links inside the moved pages were reduced by one `../` level (`../../.gitbook/` → `../.gitbook/`, `../../../.gitbook/` → `../../.gitbook/`) so they still resolve to `power-devbox-docs/.gitbook/assets/`.
-- The GitBook site syncs from GitHub with a delay; until it re-syncs, the old `/dev-tools/...` URLs remain live and the new ones 404. Git sync moves do not create GitBook redirects automatically — add redirects in GitBook site settings using the tables above if old links must keep working.
+- The GitBook site has already re-synced: new section pages verified live at `docs.powerdevbox.com` (e.g. `/dataverse-erd/dataverse-erd.md`), and the old `/dev-tools/...` URLs now 404 there. Git sync moves do not create GitBook redirects automatically — add redirects in GitBook site settings using the tables above if old links must keep working.
